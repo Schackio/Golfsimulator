@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GoGolf</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --green:#1f7a4d;
+  --dark:#0f172a;
+  --light:#f6f8f6;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto;
+  color:#0b1220;
+  background:#ffffff;
+}
+
+/* HERO */
+.hero{
+  min-height:85vh;
+  background:
+    linear-gradient(rgba(255,255,255,.0), rgba(255,255,255,.0)),
+    url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1800&q=80");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+}
+
+.hero-inner{
+  background:rgba(255,255,255,.92);
+  padding:28px 22px;
+  max-width:720px;
+  margin:24px;
+}
+
+.kicker{
+  color:var(--green);
+  letter-spacing:.12em;
+  font-size:.75rem;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+
+h1{
+  font-family:"Playfair Display",serif;
+  font-size:2.6rem;
+  line-height:1.1;
+  margin:0 0 10px;
+}
+
+.hero p{
+  color:#334155;
+  margin:0 0 18px;
+  font-size:1.05rem;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 26px;
+  border-radius:999px;
+  background:var(--green);
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 18px;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:26px;
+}
+
+.card{
+  background:var(--light);
+  padding:26px;
+}
+
+.card h3{
+  margin:0 0 8px;
+  font-size:1.1rem;
+}
+
+.card p{
+  margin:0;
+  color:#475569;
+}
+
+/* IMAGE STRIP */
+.strip{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.strip img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+}
+
+/* FOOTER */
+footer{
+  background:#0b1220;
+  color:#cbd5e1;
+  padding:36px 18px;
+  text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Mobil golfsimulator</div>
+    <h1>GoGolf bringer banen hjem til dig</h1>
+    <p>Lej en mobil golfsimulator til seriøs træning eller hyggelige runder – hjemme, i garagen eller til små events.</p>
+    <a class="btn" href="#kontakt">Kontakt</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap grid">
+    <div class="card">
+      <h3>Træn året rundt</h3>
+      <p>Slagdata og baner – uanset vejr og sæson.</p>
+    </div>
+    <div class="card">
+      <h3>Mobil opsætning</h3>
+      <p>Nemt setup i garage, kælder eller sommerhus.</p>
+    </div>
+    <div class="card">
+      <h3>Til private & små events</h3>
+      <p>Perfekt til venner, klubber og firmaer.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="strip">
+    <img src="https://images.unsplash.com/photo-1500930287844-3fca9b17a7b8?auto=format&fit=crop&w=1200&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?auto=format&fit=crop&w=1200&q=80" alt="">
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <h2 style="font-family:'Playfair Display',serif;margin-bottom:10px;">Kontakt</h2>
+    <p style="color:#475569">📧 info@gogolf.dk · 📞 12 34 56 78</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 GoGolf
+</footer>
+
+</body>
+</html>
